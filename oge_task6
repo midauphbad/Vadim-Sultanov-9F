@@ -1,0 +1,22 @@
+from random import randint, choice
+
+def generate_oge_task6():
+  number1_1 = randint(-10,10)
+  number2_1 = randint(-10,10)
+  number3_1 = randint(-10,10)
+  number4_1 = randint(-10,10)
+  number1_2 = randint(-10,10)
+  number2_2 = randint(-10,10)
+  number3_2 = randint(-10,10)
+  number4_2 = randint(-10,10)
+  task = ('Чертёжнику был дан для исполнения следующий алгоритм: \n' + 'Сместиться на ('+str(number1_1) 
+  + ',' + str(number1_2)+') \n' + 'Повтори 2 раз \n' + 'Сместиться на (' + str(number2_1) + ',' 
+  + str(number2_2) + ')\nСместиться на (' + str(number3_1) + ',' + str(number3_2) 
+  + ')\nСместиться на (' + str(number4_1)+ ',' + str(number4_2) + ') \n' + 'Конец')
+  x = number1_1 + number2_1*2 + number3_1*2 + number4_1*2
+  y = number1_2 + number2_2*2 + number3_2*2 + number4_2*2
+  return (task,x,y)
+a = generate_oge_task6()
+print(a[0])
+print(a[1])
+print(a[2])
